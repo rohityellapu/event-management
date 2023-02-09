@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { useForm } from "react-hook-form";
 import axios from 'axios';
 import Popup from 'reactjs-popup';
-const apiURL = "http://localhost:3005/event";
+const apiURL = "https://todo-api-d05y.onrender.com/event";
 function AddEvent() {
     const { register, handleSubmit, formState: { errors } } = useForm();
     const [isLoading, setisLoading] = useState(false)
