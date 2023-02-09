@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import Nav from './Nav';
-const apiURL = "http://localhost:3005/event";
+const apiURL = "https://todo-api-d05y.onrender.com/event";
 function Events() {
     const [events, setEvents] = useState([]);
     const [isLoading, setisLoading] = useState(false)

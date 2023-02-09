@@ -5,23 +5,7 @@ import Nav from './Nav';
 function EventDetail() {
     if (!sessionStorage.getItem('admin')) navigate('/');
     const { state } = useLocation();
-    console.log(state);
-    function getTime(time) {
-        Date.prototype.monthNames = [
-            "January", "February", "March",
-            "April", "May", "June",
-            "July", "August", "September",
-            "October", "November", "December"
-        ];
 
-        Date.prototype.getShortMonthName = function () {
-            return this.monthNames[this.getMonth()].substr(0, 3);
-        };
-
-        let date = new Date(time);
-        let dateTime = ` ${date.getDate()} ${date.getShortMonthName()} ${date.getFullYear()} on ${date.getHours()}:${date.getMinutes()}`
-        return dateTime
-    }
     return (
         <>
             <Nav />

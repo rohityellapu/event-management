@@ -5,8 +5,8 @@ import Nav from './Nav';
 import { useForm } from "react-hook-form";
 import axios from 'axios';
 import Popup from 'reactjs-popup';
-const apiURL = "http://localhost:3005/event/register";
-const joinURL = "http://localhost:3005/event/join"
+const apiURL = "https://todo-api-d05y.onrender.com/event/register";
+const joinURL = "https://todo-api-d05y.onrender.com/event/join"
 function Event() {
     const { state } = useLocation();
     const { register, handleSubmit, formState: { errors }, reset } = useForm();

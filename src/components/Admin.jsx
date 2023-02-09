@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import Nav from './Nav'
 import axios from 'axios';
-const apiURL = "http://localhost:3005/event";
+const apiURL = "https://todo-api-d05y.onrender.com/event";
 import AddEvent from './AddEvent';
 import { Link, useNavigate } from 'react-router-dom';
 function Admin() {
