@@ -1,7 +1,7 @@
 
-# Task Manager
+# Event Manager
 
-This repo contains the source code for Task/Todo Manager app [rohits-todo.com](https://rohits-todo.onrender.com/).
+This repo contains the source code for Event Managing demo app [rohits-event-management.com](https://event-management-byrohit.onrender.com).
 
 ## Table of Content
 
@@ -18,9 +18,11 @@ This repo contains the source code for Task/Todo Manager app [rohits-todo.com](h
 ## Features
 
 
-* Add your daily tasks or todos with ease. Your task data is securely stored in the database and can be retrieved wherever you are with simple authentication.
-* Manage your activities quickly completing the tasks one by one.
-* User can also pause his activity and start another activity, thus completing the tasks at user's own pace.
+* Join Fabulous events connecting science and technology encouraging modern children and students to build future.
+* Note down the unique ticket number after successfull registration, as the token is required for joining the event later.
+* One User can register at multiple events by no user can register multiple times for a single event.
+* Admin can monitor the number of registrations for event and can even monitor how many registrants are attended the event.
+
 
 
 ## Technologies used
@@ -84,7 +86,7 @@ This repo contains the source code for Task/Todo Manager app [rohits-todo.com](h
 
 1. `git add -A && git commit -m "My message"` (replacing `My message` with a commit message, such as `Fix header logo on Android`) to stage and commit your changes
 1. `git push my-fork-name the-name-of-my-branch`
-1. Go to the [task-manager repo](https://github.com/rohityellapu/task-manager) and you should see recently pushed branches.
+1. Go to the [task-manager repo](https://github.com/rohityellapu/event-management) and you should see recently pushed branches.
 1. Follow GitHub's instructions.
 1. If possible, include screenshots of visual changes. A preview build is triggered after your changes are pushed to GitHub.
 
@@ -94,22 +96,23 @@ This repo contains the source code for Task/Todo Manager app [rohits-todo.com](h
 │   package-lock.json
 │   package.json
 │   README.md
-│
+│   
 ├───public
 │       index.html
-│
+│       
 └───src
     │   index.js
-    │
+    │   
     ├───components
+    │       AddEvent.jsx
+    │       Admin.jsx
     │       App.jsx
-    │       Home.jsx
+    │       Event.jsx
+    │       EventDetail.jsx   
+    │       Events.jsx        
     │       Loading.jsx       
     │       Login.jsx
     │       Nav.jsx
-    │       Register.jsx      
-    │       SideBar.jsx       
-    │       Todo.jsx
     │
     └───images
             loading.gif 
@@ -118,7 +121,7 @@ This repo contains the source code for Task/Todo Manager app [rohits-todo.com](h
 ## Troubleshooting
 
 - `yarn reset` to clear the local cache
-- If any issue faced while running the app, please let us know [here](https://github.com/rohityellapu/task-manager/issues)
+- If any issue faced while running the app, please let us know [here](https://github.com/rohityellapu/event-management/issues)
 
 
 # Author: Rohit Yellapu
