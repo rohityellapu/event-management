@@ -17,10 +17,7 @@ function AddEvent() {
 
     }
     const onSubmit = async data => {
-        console.log(data, file);
         data.image = file;
-        console.log(data);
-
         try {
             setisLoading(true)
             const response = await axios.post(apiURL,
