@@ -4,9 +4,9 @@ import axios from 'axios';
 import Popup from 'reactjs-popup';
 const apiURL = "https://todo-api-d05y.onrender.com/event";
 function AddEvent() {
-    const { register, handleSubmit, formState: { errors } } = useForm();
+    const { register, handleSubmit, formState: { errors }, reset } = useForm();
     const [isLoading, setisLoading] = useState(false)
-
+    const [success, setsuccess] = useState('')
     let [filePath, setFilePath] = useState(null);
     const [file, setFile] = useState(null);
     function handleFile(e) {
@@ -27,6 +27,11 @@ function AddEvent() {
                 { ...data }, { headers: { "Content-Type": "multipart/form-data" } }).then((items) => console.log(items))
                 .catch(e => console.log(e));
             setisLoading(false)
+            reset();
+            setsuccess('Event is succesfully listed.')
+            setTimeout(() => {
+                setsuccess('')
+            }, 5000);
 
 
         } catch (error) {
@@ -91,6 +96,10 @@ function AddEvent() {
                                 <input autoComplete='off' className='bg-black w-full p-2 rounded-md border-none focus:outline-green-400' type="datetime-local" placeholder='Event time' { ...register('endTime', { required: "Enter When it's ends." }) } id="" />
                                 <p className='text-red-400 text-xs pl-1'>{ errors.endTime?.message }</p>
                             </div>
+                            { isLoading && <div className='w-full flex items-center justify-center p-5'>
+                                <img className='h-12 w-12' src={ require('../images/loading.gif') } alt="" />
+                            </div> }
+                            <p className='text-green-500'>{ success }</p>
                             <div className="actions flex justify-around">
                                 <input disabled={ isLoading } type="submit" value="Post" className='p-2 rounded-md bg-blue-600 disabled:opacity-50 hover:cursor-pointer hover:saturate-200' />
                                 <button
@@ -103,9 +112,7 @@ function AddEvent() {
                                 </button>
                             </div>
 
-                            { isLoading && <div className='w-full flex items-center justify-center p-5'>
-                                <img className='h-12 w-12' src={ require('../images/loading.gif') } alt="" />
-                            </div> }
+
                         </form>
 
                     </div>

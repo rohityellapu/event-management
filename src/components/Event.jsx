@@ -22,7 +22,7 @@ function Event() {
             setisLoading(true)
             const response = await axios.post(apiURL,
                 { ...data, event: state }).then(res => {
-                    setSuccess(`You are succesfully registered, Your ticket number is ${res.data.newTicket.number}.`)
+                    setSuccess(`You are succesfully registered, Your ticket number is ${res.data.newTicket.number}. *Please note it down, it is required while joining Event.`)
                 })
 
                 .catch(err => {
@@ -112,7 +112,7 @@ function Event() {
                 <div className="Actions flex justify-center gap-4">
                     <Popup
                         className=''
-                        trigger={ <button className="button p-2 bg-blue-500 rounded-md">Register </button> }
+                        trigger={ <button className="button p-2 bg-blue-500 rounded-md">Book Ticket </button> }
                         modal
                         nested
                     >
