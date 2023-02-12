@@ -34,6 +34,10 @@ This repo contains the source code for Event Managing demo app [rohits-event-man
 <li>➡️HTML <img height="20" src="https://user-images.githubusercontent.com/25181517/192158954-f88b5814-d510-4564-b285-dff7d6400dad.png"></li>
 <li>➡️CSS <img height="20" src="https://user-images.githubusercontent.com/25181517/183898674-75a4a1b1-f960-4ea9-abcb-637170a00a75.png"></li>
 <li>➡️TailWind CSS <img height="20" src="https://user-images.githubusercontent.com/25181517/202896760-337261ed-ee92-4979-84c4-d4b829c7355d.png"></li>
+<li>➡️NodeJS <img height="20" src="https://user-images.githubusercontent.com/25181517/183568594-85e280a7-0d7e-4d1a-9028-c8c2209e073c.png"></li>
+<li>➡️Express <img height="20" src="https://user-images.githubusercontent.com/25181517/183859966-a3462d8d-1bc7-4880-b353-e2cbed900ed6.png"></li>
+<li>➡️RESTful API <img height="20" src="https://user-images.githubusercontent.com/25181517/192107858-fe19f043-c502-4009-8c47-476fc89718ad.png"></li>
+<li>➡️MongoDB <img height="20" src="https://user-images.githubusercontent.com/25181517/182884177-d48a8579-2cd0-447a-b9a6-ffc7cb02560e.png"></li>
 <li>➡️Visual Studio Code <img height="20" src="https://user-images.githubusercontent.com/25181517/192108891-d86b6220-e232-423a-bf5f-90903e6887c3.png"></li>
 <li>➡️GIT <img height="20" src="https://user-images.githubusercontent.com/25181517/192108372-f71d70ac-7ae6-4c0d-8395-51d8870c2ef0.png"></li>
 <li>➡️GitHub <img height="20" src="https://user-images.githubusercontent.com/25181517/192108374-8da61ba1-99ec-41d7-80b8-fb2f7c0a4948.png"></li>
@@ -50,8 +54,8 @@ This repo contains the source code for Event Managing demo app [rohits-event-man
 
 ### Installation
 
-1. `git clone https://github.com/rohityellapu/task-manager.git` to clone the repo in your local environment
-1. `cd task-manager` to go into the project root
+1. `git clone https://github.com/rohityellapu/event-management.git` to clone the repo in your local environment
+1. `cd event-management` to go into the project root
 1. `npm install or npm i` to install the website's npm dependencies
 
 ### Running locally
@@ -65,7 +69,7 @@ This repo contains the source code for Event Managing demo app [rohits-event-man
 
 ### Create a branch
 
-1. `git checkout main` from any folder in your local `task-manager` repository
+1. `git checkout main` from any folder in your local `event-management` repository
 1. `git pull origin main` to ensure you have the latest main code
 1. `git checkout -b the-name-of-my-branch` (replacing `the-name-of-my-branch` with a suitable name) to create a branch
 
